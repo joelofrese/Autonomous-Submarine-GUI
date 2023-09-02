@@ -1,0 +1,58 @@
+[0.061s] Invoking command in '/home/haliedo/IntroWorkSpaceQuynhAnh/src/build/cu_chet_di_ngai_ngung_gi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/haliedo/IntroWorkSpaceQuynhAnh/src/cu_chet_di_ngai_ngung_gi -DCMAKE_INSTALL_PREFIX=/home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi
+[0.192s] -- The C compiler identification is GNU 9.4.0
+[0.279s] -- The CXX compiler identification is GNU 9.4.0
+[0.292s] -- Check for working C compiler: /usr/bin/cc
+[0.376s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.377s] -- Detecting C compiler ABI info
+[0.516s] -- Detecting C compiler ABI info - done
+[0.536s] -- Detecting C compile features
+[0.538s] -- Detecting C compile features - done
+[0.542s] -- Check for working CXX compiler: /usr/bin/c++
+[0.654s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.655s] -- Detecting CXX compiler ABI info
+[0.808s] -- Detecting CXX compiler ABI info - done
+[0.824s] -- Detecting CXX compile features
+[0.825s] -- Detecting CXX compile features - done
+[0.829s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.869s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.872s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.215s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.372s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.379s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.380s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/haliedo/IntroWorkSpaceQuynhAnh/src/cu_chet_di_ngai_ngung_gi/include>
+[1.380s] -- Configured cppcheck exclude dirs and/or files: 
+[1.383s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.383s] -- Configured cpplint exclude dirs and/or files: 
+[1.385s] -- Added test 'lint_cmake' to check CMake code style
+[1.386s] -- Added test 'uncrustify' to check C / C++ code style
+[1.387s] -- Configured uncrustify additional arguments: 
+[1.388s] -- Added test 'xmllint' to check XML markup files
+[1.391s] -- Configuring done
+[1.395s] -- Generating done
+[1.398s] -- Build files have been written to: /home/haliedo/IntroWorkSpaceQuynhAnh/src/build/cu_chet_di_ngai_ngung_gi
+[1.407s] Invoked command in '/home/haliedo/IntroWorkSpaceQuynhAnh/src/build/cu_chet_di_ngai_ngung_gi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/haliedo/IntroWorkSpaceQuynhAnh/src/cu_chet_di_ngai_ngung_gi -DCMAKE_INSTALL_PREFIX=/home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi
+[1.415s] Invoking command in '/home/haliedo/IntroWorkSpaceQuynhAnh/src/build/cu_chet_di_ngai_ngung_gi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/haliedo/IntroWorkSpaceQuynhAnh/src/build/cu_chet_di_ngai_ngung_gi -- -j2 -l2
+[1.481s] [35m[1mScanning dependencies of target ma_le_phi_xuan[0m
+[1.496s] [ 50%] [32mBuilding CXX object CMakeFiles/ma_le_phi_xuan.dir/src/ma_le_phi_xuan.cpp.o[0m
+[1.545s] [100%] [32m[1mLinking CXX executable ma_le_phi_xuan[0m
+[1.663s] [100%] Built target ma_le_phi_xuan
+[1.712s] Invoked command in '/home/haliedo/IntroWorkSpaceQuynhAnh/src/build/cu_chet_di_ngai_ngung_gi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/haliedo/IntroWorkSpaceQuynhAnh/src/build/cu_chet_di_ngai_ngung_gi -- -j2 -l2
+[1.777s] Invoking command in '/home/haliedo/IntroWorkSpaceQuynhAnh/src/build/cu_chet_di_ngai_ngung_gi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/haliedo/IntroWorkSpaceQuynhAnh/src/build/cu_chet_di_ngai_ngung_gi
+[1.820s] -- Install configuration: ""
+[1.829s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/lib/cu_chet_di_ngai_ngung_gi/ma_le_phi_xuan
+[1.829s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/ament_index/resource_index/package_run_dependencies/cu_chet_di_ngai_ngung_gi
+[1.829s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/ament_index/resource_index/parent_prefix_path/cu_chet_di_ngai_ngung_gi
+[1.829s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/cu_chet_di_ngai_ngung_gi/environment/ament_prefix_path.sh
+[1.830s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/cu_chet_di_ngai_ngung_gi/environment/ament_prefix_path.dsv
+[1.830s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/cu_chet_di_ngai_ngung_gi/environment/path.sh
+[1.830s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/cu_chet_di_ngai_ngung_gi/environment/path.dsv
+[1.830s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/cu_chet_di_ngai_ngung_gi/local_setup.bash
+[1.830s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/cu_chet_di_ngai_ngung_gi/local_setup.sh
+[1.830s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/cu_chet_di_ngai_ngung_gi/local_setup.zsh
+[1.830s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/cu_chet_di_ngai_ngung_gi/local_setup.dsv
+[1.830s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/cu_chet_di_ngai_ngung_gi/package.dsv
+[1.831s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/ament_index/resource_index/packages/cu_chet_di_ngai_ngung_gi
+[1.843s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/cu_chet_di_ngai_ngung_gi/cmake/cu_chet_di_ngai_ngung_giConfig.cmake
+[1.843s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/cu_chet_di_ngai_ngung_gi/cmake/cu_chet_di_ngai_ngung_giConfig-version.cmake
+[1.843s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/cu_chet_di_ngai_ngung_gi/share/cu_chet_di_ngai_ngung_gi/package.xml
+[1.863s] Invoked command in '/home/haliedo/IntroWorkSpaceQuynhAnh/src/build/cu_chet_di_ngai_ngung_gi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/haliedo/IntroWorkSpaceQuynhAnh/src/build/cu_chet_di_ngai_ngung_gi

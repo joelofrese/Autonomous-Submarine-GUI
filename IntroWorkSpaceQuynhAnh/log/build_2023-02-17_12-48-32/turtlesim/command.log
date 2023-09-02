@@ -1,0 +1,6 @@
+Invoking command in '/home/haliedo/IntroWorkSpaceQuynhAnh/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/haliedo/IntroWorkSpaceQuynhAnh/src/ros_tutorials/turtlesim -DCMAKE_INSTALL_PREFIX=/home/haliedo/IntroWorkSpaceQuynhAnh/install/turtlesim
+Invoked command in '/home/haliedo/IntroWorkSpaceQuynhAnh/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/haliedo/IntroWorkSpaceQuynhAnh/src/ros_tutorials/turtlesim -DCMAKE_INSTALL_PREFIX=/home/haliedo/IntroWorkSpaceQuynhAnh/install/turtlesim
+Invoking command in '/home/haliedo/IntroWorkSpaceQuynhAnh/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/haliedo/IntroWorkSpaceQuynhAnh/build/turtlesim -- -j2 -l2
+Invoked command in '/home/haliedo/IntroWorkSpaceQuynhAnh/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/haliedo/IntroWorkSpaceQuynhAnh/build/turtlesim -- -j2 -l2
+Invoking command in '/home/haliedo/IntroWorkSpaceQuynhAnh/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/haliedo/IntroWorkSpaceQuynhAnh/build/turtlesim
+Invoked command in '/home/haliedo/IntroWorkSpaceQuynhAnh/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/haliedo/IntroWorkSpaceQuynhAnh/build/turtlesim

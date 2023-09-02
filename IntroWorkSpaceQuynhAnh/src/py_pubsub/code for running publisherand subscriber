@@ -1,0 +1,9 @@
+important code for checking the project
+source /opt/ros/foxy/setup.bash #used for sourcing the environment so you can use ros2 command
+colcon build --packages-select py_pubsub (in root workspace IntroWorkSpaceQuynhAnh)
+in the same workspace at different terminal apply this code: . install/setup.bash
+then write 
+ros2 run py_pubsub unix_epoch_time_publisher
+ros2 run py_pubsub unix_epoch_time_subscriber
+
+

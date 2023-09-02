@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: py-pubsub
+Version: 0.0.0
+Summary: create publisher that generates current unix epoch time
+Home-page: UNKNOWN
+Maintainer: haliedo
+Maintainer-email: doq300861@gmail.com
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,4 @@
+source;share/cu_chet_di_ngai_ngung_gi/local_setup.bash
+source;share/cu_chet_di_ngai_ngung_gi/local_setup.dsv
+source;share/cu_chet_di_ngai_ngung_gi/local_setup.sh
+source;share/cu_chet_di_ngai_ngung_gi/local_setup.zsh

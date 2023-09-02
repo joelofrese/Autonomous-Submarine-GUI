@@ -1,0 +1,8 @@
+source;share/cu_chet_di_ngai_ngung_gi/hook/cmake_prefix_path.ps1
+source;share/cu_chet_di_ngai_ngung_gi/hook/cmake_prefix_path.dsv
+source;share/cu_chet_di_ngai_ngung_gi/hook/cmake_prefix_path.sh
+source;share/cu_chet_di_ngai_ngung_gi/local_setup.bash
+source;share/cu_chet_di_ngai_ngung_gi/local_setup.dsv
+source;share/cu_chet_di_ngai_ngung_gi/local_setup.ps1
+source;share/cu_chet_di_ngai_ngung_gi/local_setup.sh
+source;share/cu_chet_di_ngai_ngung_gi/local_setup.zsh

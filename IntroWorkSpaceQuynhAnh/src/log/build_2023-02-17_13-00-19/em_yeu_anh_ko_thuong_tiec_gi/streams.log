@@ -1,0 +1,58 @@
+[0.055s] Invoking command in '/home/haliedo/IntroWorkSpaceQuynhAnh/src/build/em_yeu_anh_ko_thuong_tiec_gi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/haliedo/IntroWorkSpaceQuynhAnh/src/em_yeu_anh_ko_thuong_tiec_gi -DCMAKE_INSTALL_PREFIX=/home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi
+[0.178s] -- The C compiler identification is GNU 9.4.0
+[0.253s] -- The CXX compiler identification is GNU 9.4.0
+[0.259s] -- Check for working C compiler: /usr/bin/cc
+[0.350s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.351s] -- Detecting C compiler ABI info
+[0.462s] -- Detecting C compiler ABI info - done
+[0.483s] -- Detecting C compile features
+[0.483s] -- Detecting C compile features - done
+[0.487s] -- Check for working CXX compiler: /usr/bin/c++
+[0.607s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.609s] -- Detecting CXX compiler ABI info
+[0.765s] -- Detecting CXX compiler ABI info - done
+[0.783s] -- Detecting CXX compile features
+[0.784s] -- Detecting CXX compile features - done
+[0.787s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.819s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.820s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.113s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.243s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.244s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.244s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/haliedo/IntroWorkSpaceQuynhAnh/src/em_yeu_anh_ko_thuong_tiec_gi/include>
+[1.244s] -- Configured cppcheck exclude dirs and/or files: 
+[1.246s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.246s] -- Configured cpplint exclude dirs and/or files: 
+[1.246s] -- Added test 'lint_cmake' to check CMake code style
+[1.248s] -- Added test 'uncrustify' to check C / C++ code style
+[1.248s] -- Configured uncrustify additional arguments: 
+[1.249s] -- Added test 'xmllint' to check XML markup files
+[1.251s] -- Configuring done
+[1.255s] -- Generating done
+[1.257s] -- Build files have been written to: /home/haliedo/IntroWorkSpaceQuynhAnh/src/build/em_yeu_anh_ko_thuong_tiec_gi
+[1.263s] Invoked command in '/home/haliedo/IntroWorkSpaceQuynhAnh/src/build/em_yeu_anh_ko_thuong_tiec_gi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/haliedo/IntroWorkSpaceQuynhAnh/src/em_yeu_anh_ko_thuong_tiec_gi -DCMAKE_INSTALL_PREFIX=/home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi
+[1.273s] Invoking command in '/home/haliedo/IntroWorkSpaceQuynhAnh/src/build/em_yeu_anh_ko_thuong_tiec_gi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/haliedo/IntroWorkSpaceQuynhAnh/src/build/em_yeu_anh_ko_thuong_tiec_gi -- -j2 -l2
+[1.387s] [35m[1mScanning dependencies of target cho_de[0m
+[1.398s] [ 50%] [32mBuilding CXX object CMakeFiles/cho_de.dir/src/cho_de.cpp.o[0m
+[1.442s] [100%] [32m[1mLinking CXX executable cho_de[0m
+[1.504s] [100%] Built target cho_de
+[1.523s] Invoked command in '/home/haliedo/IntroWorkSpaceQuynhAnh/src/build/em_yeu_anh_ko_thuong_tiec_gi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/haliedo/IntroWorkSpaceQuynhAnh/src/build/em_yeu_anh_ko_thuong_tiec_gi -- -j2 -l2
+[1.604s] Invoking command in '/home/haliedo/IntroWorkSpaceQuynhAnh/src/build/em_yeu_anh_ko_thuong_tiec_gi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/haliedo/IntroWorkSpaceQuynhAnh/src/build/em_yeu_anh_ko_thuong_tiec_gi
+[1.624s] -- Install configuration: ""
+[1.624s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/lib/em_yeu_anh_ko_thuong_tiec_gi/cho_de
+[1.625s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/ament_index/resource_index/package_run_dependencies/em_yeu_anh_ko_thuong_tiec_gi
+[1.626s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/ament_index/resource_index/parent_prefix_path/em_yeu_anh_ko_thuong_tiec_gi
+[1.627s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/em_yeu_anh_ko_thuong_tiec_gi/environment/ament_prefix_path.sh
+[1.627s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/em_yeu_anh_ko_thuong_tiec_gi/environment/ament_prefix_path.dsv
+[1.628s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/em_yeu_anh_ko_thuong_tiec_gi/environment/path.sh
+[1.629s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/em_yeu_anh_ko_thuong_tiec_gi/environment/path.dsv
+[1.629s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/em_yeu_anh_ko_thuong_tiec_gi/local_setup.bash
+[1.630s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/em_yeu_anh_ko_thuong_tiec_gi/local_setup.sh
+[1.630s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/em_yeu_anh_ko_thuong_tiec_gi/local_setup.zsh
+[1.631s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/em_yeu_anh_ko_thuong_tiec_gi/local_setup.dsv
+[1.632s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/em_yeu_anh_ko_thuong_tiec_gi/package.dsv
+[1.632s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/ament_index/resource_index/packages/em_yeu_anh_ko_thuong_tiec_gi
+[1.634s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/em_yeu_anh_ko_thuong_tiec_gi/cmake/em_yeu_anh_ko_thuong_tiec_giConfig.cmake
+[1.635s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/em_yeu_anh_ko_thuong_tiec_gi/cmake/em_yeu_anh_ko_thuong_tiec_giConfig-version.cmake
+[1.635s] -- Installing: /home/haliedo/IntroWorkSpaceQuynhAnh/src/install/em_yeu_anh_ko_thuong_tiec_gi/share/em_yeu_anh_ko_thuong_tiec_gi/package.xml
+[1.646s] Invoked command in '/home/haliedo/IntroWorkSpaceQuynhAnh/src/build/em_yeu_anh_ko_thuong_tiec_gi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/haliedo/IntroWorkSpaceQuynhAnh/src/build/em_yeu_anh_ko_thuong_tiec_gi

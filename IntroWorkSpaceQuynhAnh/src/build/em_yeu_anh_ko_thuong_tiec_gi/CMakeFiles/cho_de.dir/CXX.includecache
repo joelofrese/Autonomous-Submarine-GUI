@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/haliedo/IntroWorkSpaceQuynhAnh/src/em_yeu_anh_ko_thuong_tiec_gi/src/cho_de.cpp
+cstdio
+-
+

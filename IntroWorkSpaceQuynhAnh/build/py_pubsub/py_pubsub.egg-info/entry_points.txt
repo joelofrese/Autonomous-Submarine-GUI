@@ -1,0 +1,4 @@
+[console_scripts]
+unix_epoch_time_publisher = py_pubsub.danmei_is_life:main
+unix_epoch_time_subscriber = py_pubsub.danmei_is_passion:main
+
