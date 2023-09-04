@@ -9,11 +9,14 @@
 - Transforming original image pixels through rotation, shearing, and scaling
 - Rotation
  ![lenna-rotation.png](https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/lenna-rotation.png)
+
 - Shearing
  ![lenna-shear.png](https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/lenna-shear.png)
+
 - Scaling
  ![lenna-scale.png](https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/lenna-scale.png)
 
 ### 3. Image Pixel Encryption with Caesar Cipher
 - Encrypting image pixels using Caeser cipher cryptography
+
  ![text-crypt.png](https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/text-crypt.png)
