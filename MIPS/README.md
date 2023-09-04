@@ -70,6 +70,19 @@ This section contains MIPS assembly code responsible for transforming the origin
 - `a2`: Transformation matrix address
 - `a3`: Image dimension (assuming a square-sized image, i.e., the number of pixels is `a3*a3`)
 
+The transformation of a pixel's coordinates (x, y) using a 2D transformation matrix can be expressed as follows:
+```
+x' = M00 * x + M01 * y + M02
+y' = M10 * x + M11 * y + M12
+```
+In this equation:
+    (x', y') are the transformed coordinates.
+    (x, y) are the original coordinates.
+    M00, M01, M02, M10, M11, M12 are elements of the transformation matrix.
+    M00 and M01 are responsible for scaling and shearing in the x-direction.
+    M10 and M11 are responsible for scaling and shearing in the y-direction.
+    M02 and M12 are responsible for translation in the x and y directions, respectively.
+    
 Here is how the algorithm works:
 1. Initialize two counters, `x` and `y`, to zero (`$t0` and `$t1`).
 ```
@@ -129,6 +142,65 @@ Done:
 ```
 
 ## 3. Image Pixel Encryption with Caesar Cipher
-- Encrypting image pixels using Caeser cipher cryptography
+This section contains MIPS assembly code responsible for encrypting image pixels using the Caesar Cipher cryptography technique. The code accepts the following parameters:
 
+- `a0`: Input buffer address
+- `a1`: Output buffer address
+- `a2`: Image dimension (assuming a square-sized image, i.e., the number of pixels is `a2*a2`)
+
+Here's how the algorithm works:
+1. Initialize two counters, `x` (row) and `y` (column), to zero (`$t0` and `$t1`).
+```
+addu $t0, $0, $0 # initialize x (row) to 0
+addu $t1, $0, $0 # initialize y (col) to 0
+```
+2. Start an outer loop (`outer_for_loop`) that iterates for each row of pixels in the image.
+```
+outer_for_loop: beq $t0, $a2, exit # if x > a2 - 1, exit loop
+		addu $t1, $0, $0 # initialize counter (for inner loop) to 0
+```
+3. Begin an inner loop (`inner_for_loop`) for each pixel within the row.
+```
+# Load five consecutive pixels from the input buffer (`$a0`) into registers `$t2` to `$t6`.
+inner_for_loop: beq $t1, $a2, Increment_row # if y > a2 - 1, increment row
+   # Shuffle the positions of these pixels, effectively performing a permutation.
+	lbu $t2, 0($a0) # load 1st pixel
+	addiu $a0, $a0, 1 # increment input buffer address
+	lbu $t3, 0($a0) # load 2nd pixel
+	addiu $a0, $a0, 1 # increment input buffer address
+	lbu $t4, 0($a0) # load 3rd pixel
+	addiu $a0, $a0, 1 # increment input buffer address
+	lbu $t5, 0($a0) # load 4th pixel
+	addiu $a0, $a0, 1 # increment input buffer address
+	lbu $t6, 0($a0) # load 5th pixel
+
+	#Shuffle pixel positions: Store the shuffled pixels in the output buffer (`$a1`).
+	sb $t5, 0($a1) # store 4th pixel in 1st pixel's location 
+	addiu $a1, $a1, 1 # increment output buffer address
+	sb $t4, 0($a1) # store 3rd pixel in 2nd pixel's location
+	addiu $a1, $a1, 1 # increment output buffer address
+	sb $t2, 0($a1) # store 1st pixel in 3rd pixel's location
+	addiu $a1, $a1, 1 # increment output buffer address
+	sb $t6, 0($a1) # store 5th pixel in 4th pixel's location
+	addiu $a1, $a1, 1 # increment output buffer address
+	sb $t3, 0($a1) # store 2nd pixel in 5th pixel's location
+```
+4. Increment the counters and buffer addresses accordingly to continue processing the next set of pixels.
+```
+Increment_column:
+	addiu $t1, $t1, 5 #increment column index (y = y + 1)
+	addiu $a0, $a0, 1 #increment input buffer address
+	addiu $a1, $a1, 1 # increment output buffer address
+	j inner_for_loop
+```
+9. After completing each row, increment the row index (`x`) and return to the outer loop.
+```
+
+Increment_row:
+	addiu $t0, $t0, 1 #increment rowindex (x = x + 1)
+	j outer_for_loop
+
+finished:
+```
+Here's the resulting image after running the program:
  ![text-crypt.png](https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/text-crypt.png)
