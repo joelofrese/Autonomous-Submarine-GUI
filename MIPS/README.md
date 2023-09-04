@@ -6,7 +6,6 @@
 - Mapping pixels from a monochromatic image to another image that contains only pixel values of 0 (white) or 255 (black) using a buffer
 <div align="center">
   <img src="https://github.com/ayuyamo/Projects/blob/61a3e80eb8b9da2db11573c8ef3ccbe7689bdc71/MIPS/images/lenna-thresh.png" width="48%">
-    <div style="display: inline-block; margin: 0 2%; font-size: 20px;">➡️</div>
   <img src="https://github.com/ayuyamo/Projects/blob/068a73847087c556dbca571a0b74bfda5fd3f3ea/MIPS/images/lenna.png" width="48%">
 </div>
 
