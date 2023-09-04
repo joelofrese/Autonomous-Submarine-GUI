@@ -2,7 +2,7 @@
 
 ## Original Image
 ![lenna.png](https://github.com/ayuyamo/Projects/blob/068a73847087c556dbca571a0b74bfda5fd3f3ea/MIPS/images/lenna.png)
-### 1. Monochrome to Binary Pixel Mapping
+## 1. Monochrome to Binary Pixel Mapping
 Here is the MIPS assembly code responsible for image thresholding. This code transforms the input image into a binary image based on a specified threshold value. The assembly code accepts the following parameters:
 
 - `a0`: Input buffer address
@@ -52,25 +52,83 @@ Iterate_outer_loop:
 addiu $t0 $t0, 1 # increment x
 j for_loop #jump back to loop
 ```
-6. The program exits after processing all pixels.
-```
-exit: #program exits
-```
 <div align="center">
   <img src="https://github.com/ayuyamo/Projects/blob/068a73847087c556dbca571a0b74bfda5fd3f3ea/MIPS/images/lenna.png" width="48%">
   <img src="https://github.com/ayuyamo/Projects/blob/61a3e80eb8b9da2db11573c8ef3ccbe7689bdc71/MIPS/images/lenna-thresh.png" width="48%">
 </div>
 
-### 2. Image Pixel Transformation: Rotation, Shearing, and Scaling
-- Transforming original image pixels through rotation, shearing, and scaling
+## 2. Image Pixel Transformation: Rotation, Shearing, and Scaling
 <div align="center">
   <img src="https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/lenna-rotation.png" width="30%">
   <img src="https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/lenna-shear.png" width="30%">
   <img src="https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/lenna-scale.png" width="30%">
 </div>
+This section contains MIPS assembly code responsible for transforming the original image pixels through rotation, shearing, and scaling. The code accepts the following parameters:
 
+- `a0`: Input buffer address
+- `a1`: Output buffer address
+- `a2`: Transformation matrix address
+- `a3`: Image dimension (assuming a square-sized image, i.e., the number of pixels is `a3*a3`)
 
-### 3. Image Pixel Encryption with Caesar Cipher
+Here is how the algorithm works:
+1. Initialize two counters, `x` and `y`, to zero (`$t0` and `$t1`).
+```
+addu $t0, $0, $0 # t0 = x = 0 = row
+addu $t1, $0, $0 # t1 = y = 0 = column
+```
+2. Start an outer loop (`Outer_loop`) that iterates for each row of pixels in the image &
+   Begin an inner loop (`Inner_loop`) for each pixel within the row &
+```
+Outer_loop: beq $t0, $a3, Done # if x > a3 - 1, exit program
+addu $t1, $0, $0 # initialize y = 0
+Inner_loop: beq $t1, $a3, Increment_x
+# Load elements (`M00`, `M01`, `M02`, `M10`, `M11`, `M12`) from the transformation matrix.
+lw $t2, 0($a2) # load M00
+lw $t3, 4($a2) # load M01
+lw $t4, 8($a2) # load M02
+
+# Calculate the new pixel coordinates, `x0` and `y0`, based on the transformation.
+mul $t2, $t1, $t2 # t2 = y*M00
+mul $t3, $t0, $t3 # t3 = x*M01
+addu $t3, $t3, $t2 # t3 =  y*M00 + x*M01
+addu $t5, $t3, $t4 # t5 = x0 = y*M00 + x*M01 + M02
+
+lw $t2, 12($a2) # load M10
+lw $t3, 16($a2) # load M11
+lw $t4, 20($a2) # load M12
+
+mul $t2, $t1, $t2 # t2 = y*M10
+mul $t3, $t0, $t3 # t3 = x*M11
+addu $t3, $t3, $t2 # t3 =  y*M10 + x*M11
+addu $t6, $t3, $t4 # t6 = y0 = y*M10 + x*M11 + M12
+
+# Check if the calculated coordinates exceed the image dimension (`a3`). If they do, set the pixel value to 0 (white); otherwise, retrieve the pixel value.
+check_x0: bge $t5, $a3, zero_value # if x0 >= a3, jump to zero_value
+check_y0: bge $t6, $a3, zero_value # if y0 >= a3, jump to zero_value
+mul $t6, $t6, $a3 # $t6 = y0*a3
+addu $t6, $t5, $t6 #$t6 = offset = y0*a3 + x0
+addu $t6, $a0, $t6 # t6 = element address = a0 + offset
+lbu $t2, 0($t6) # load affine transformation pixel value from element address
+sb $t2, 0($a1) # store element in output buffer
+j Increment_counter_y
+zero_value: sb $0, 0($a1) # store 0 into output buffer
+```
+3. Increment the counters and buffer addresses accordingly and continue the inner loop.
+```
+Increment_counter_y:
+    addiu $t1, $t1, 1 # increment inner loop counter (y++)
+    addiu $a1, $a1, 1 # increment output buffer address
+    j Inner_loop # iterate inner loop
+```
+4. After completing each row, increment the `x` counter and return to the outer loop.
+```
+Increment_x:
+addiu $t0, $t0, 1 # increment outer loop counter (x++)
+j Outer_loop # iterate outer loop
+Done:
+```
+
+## 3. Image Pixel Encryption with Caesar Cipher
 - Encrypting image pixels using Caeser cipher cryptography
 
  ![text-crypt.png](https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/text-crypt.png)
