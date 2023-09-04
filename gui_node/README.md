@@ -7,7 +7,7 @@
      - Source setup script in workspace: `. install/setup.bash` 
      - Run **gui_node**: `ros2 run gui_node gui_exec`
 ## 2. Homepage
-* In the homepage, select the nodes you want to enable (brain, mediator or pid) and click **Start**
+* In the homepage, select the nodes you want to enable (`brain`, `mediator` or `pid`) and click `Start`
 * Navigate to different pages using buttons on the side bar
   * **PID Controller:**
     - Tune PID values in the line edits (hit **Enter/Return** keys to send the values)
