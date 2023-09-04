@@ -68,7 +68,7 @@ The main() function initializes the ROS2 system using rclpy.init(), creates an i
 ### Add Dependencies and Entry Points
 Make sure you follow the intructions to set them up correctly, otherwise the colon building proccess would fail (and obviously it will also fail if there're coding errors in your publisher/subscriber nodes, so double check it.
 
-For entry points, this is the format you will follow:
+For entry points in `setup.py`, this is the format you will follow:
 
 ```entry_points={
         'console_scripts': [
