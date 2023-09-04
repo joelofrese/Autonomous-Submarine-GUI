@@ -202,5 +202,6 @@ Increment_row:
 
 finished:
 ```
-Here's the resulting image after running the program:
- ![text-crypt.png](https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/text-crypt.png)
+- Here's the resulting image after running the program:
+
+![text-crypt.png](https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/text-crypt.png)
