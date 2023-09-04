@@ -21,55 +21,54 @@ This is a Python program that creates a ROS2 node that periodically publishes th
 
 Here's a detailed explanation of what the code is doing:
 
-   Importing necessary modules and packages:
+- Importing necessary modules and packages:
 
-   `rclpy` is a Python package for using ROS2 in Python.
-   `time` is a standard Python library for handling time-related operations.
-   `Node` is a class from rclpy.node module for creating a ROS2 node.
-   `String` is a message type from std_msgs.msg module that we will be publishing.
+   - `rclpy` is a Python package for using ROS2 in Python.
+   - `time` is a standard Python library for handling time-related operations.
+   - `Node` is a class from rclpy.node module for creating a ROS2 node.
+   - `String` is a message type from std_msgs.msg module that we will be publishing.
 
-   Creating a class `UnixEpochTime` that inherits from `Node` class:
+- Creating a class `UnixEpochTime` that inherits from `Node` class:
 
-   The `__init__` method initializes the node and creates a publisher to publish the current Unix epoch time.
-   The `timer_period` variable sets the time interval between successive calls to the `timer_callback()` method.
-   The `timer_callback()` method gets the current Unix epoch time and publishes it as a String message. It also logs the message to the console.
+   - The `__init__` method initializes the node and creates a publisher to publish the current Unix epoch time.
+   - The `timer_period` variable sets the time interval between successive calls to the `timer_callback()` method.
+   - The `timer_callback()` method gets the current Unix epoch time and publishes it as a String message. It also logs the message to the console.
 
-   Defining a `main` function:
-
-   `rclpy.init(args=args)` initializes the ROS2 client library.
-   `unix_epoch_time = UnixEpochTime()` creates an instance of the `UnixEpochTime` class.
-   `rclpy.spin(unix_epoch_time)` starts spinning the ROS2 node to handle callbacks.
-   `unix_epoch_time.destroy_node()` destroys the node and its associated resources.
-   `rclpy.shutdown()` shuts down the ROS2 client library.
+- Defining a `main` function:
+   - `rclpy.init(args=args)` initializes the ROS2 client library.
+   - `unix_epoch_time = UnixEpochTime()` creates an instance of the `UnixEpochTime` class.
+   - `rclpy.spin(unix_epoch_time)` starts spinning the ROS2 node to handle callbacks.
+   - `unix_epoch_time.destroy_node()` destroys the node and its associated resources.
+   - `rclpy.shutdown()` shuts down the ROS2 client library.
 
    Running the `main` function if the Python script is being executed directly (i.e., not imported as a module).
 
-In summary, this program creates a ROS2 node that periodically publishes the current Unix epoch time as a string message on a specified topic. The node is implemented as a class, and the rclpy library is used to manage the ROS2-related functionality.
+* In summary, this program creates a ROS2 node that periodically publishes the current Unix epoch time as a string message on a specified topic. The node is implemented as a class, and the rclpy library is used to manage the ROS2-related functionality.
 
 ### Subscriber
 This code defines a ROS2 subscriber node that listens to a topic called `unix_epoch_time` which should publish messages of type `Int64`. When a message is received, the callback function `callback()` is executed, which converts the unix epoch time (a timestamp measured in seconds since January 1, 1970) to a human-readable date string of the format `YYYY-MM-DD HH:MM:SS`. The human-readable date string is then published to another topic called `human_readable_date` as a message of type `String`. Below is more detailed explanation of the code:
 
-   Creating a class HumanReadableDate that inherits from Node class:
+- Creating a class HumanReadableDate that inherits from Node class:
 
-   The `__init__` method initializes the node and creates a subscription to the `current_unix_epoch_time` topic with a callback method listener_callback.
-   The `listener_callback` method gets the received message, extracts the seconds and nanoseconds from the message data, and converts them to a Unix epoch time value.
-   It then converts the Unix epoch time value to a datetime object and converts the datetime object to a human-readable date string.
-   The date string is logged to the console.
+   - The `__init__` method initializes the node and creates a subscription to the `current_unix_epoch_time` topic with a callback method listener_callback.
+   - The `listener_callback` method gets the received message, extracts the seconds and nanoseconds from the message data, and converts them to a Unix epoch time value.
+   - It then converts the Unix epoch time value to a datetime object and converts the datetime object to a human-readable date string.
+   - The date string is logged to the console.
 
-   Defining a `main` function:
+- Defining a `main` function:
 
-   `rclpy.init(args=args)` initializes the ROS2 client library.
-   `human_readable_date = HumanReadableDate()` creates an instance of the HumanReadableDate class.
-   `rclpy.spin(human_readable_date)` starts spinning the ROS2 node to handle callbacks.
-   `human_readable_date.destroy_node()` destroys the node and its associated resources.
-   `rclpy.shutdown()` shuts down the ROS2 client library.
+   - `rclpy.init(args=args)` initializes the ROS2 client library.
+   - `human_readable_date = HumanReadableDate()` creates an instance of the HumanReadableDate class.
+   - `rclpy.spin(human_readable_date)` starts spinning the ROS2 node to handle callbacks.
+   - `human_readable_date.destroy_node()` destroys the node and its associated resources.
+   - `rclpy.shutdown()` shuts down the ROS2 client library.
 
 The `main()` function initializes the ROS2 system using `rclpy.init()`, creates an instance of the `UnixEpochTimeSubscriber` class, and enters the ROS2 event loop using `rclpy.spin()`. The event loop allows the subscriber to receive messages and the publisher to send messages. Finally, the node is destroyed using `unix_epoch_time_subscriber.destroy_node()`, and the ROS2 system is shutdown using `rclpy.shutdown()`.
 
 ### Add Dependencies and Entry Points
 Make sure you follow the intructions to set them up correctly, otherwise the colon building proccess would fail (and obviously it will also fail if there're coding errors in your publisher/subscriber nodes, so double check it.
 
-For entry points in `setup.py`, this is the format you will follow:
+- For entry points in `setup.py`, this is the format you will follow:
 
 ```entry_points={
         'console_scripts': [
