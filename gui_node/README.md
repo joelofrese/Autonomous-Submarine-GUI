@@ -1,12 +1,12 @@
 # HOW TO USE GUI NODE 
 
-##1. Open terminal and run these commands:
+## 1. Open terminal and run these commands:
    - Source the ROS environment: `source /opt/ros/foxy/setup.bash`
    - In the workspace that contains **gui_node** package, run:
      - Build **gui_node** package: `colcon build --packages-select gui_node`
      - Source setup script in workspace: `. install/setup.bash` 
      - Run **gui_node**: `ros2 run gui_node gui_exec`
-##2. In the homepage, select the nodes you want to enable (brain, mediator or pid) and click **Start**
+## 2. In the homepage, select the nodes you want to enable (brain, mediator or pid) and click **Start**
 * Navigate to different pages using buttons on the side bar
   * **PID Controller:**
     - Tune PID values in the line edits (hit **Enter/Return** keys to send the values)
