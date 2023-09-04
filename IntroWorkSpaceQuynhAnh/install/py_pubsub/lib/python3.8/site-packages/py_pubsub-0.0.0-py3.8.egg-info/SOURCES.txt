@@ -9,8 +9,8 @@ setup.py
 ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
 ../../build/py_pubsub/py_pubsub.egg-info/zip-safe
 py_pubsub/__init__.py
-py_pubsub/danmei_is_life.py
-py_pubsub/danmei_is_passion.py
+py_pubsub/epoch_publisher.py
+py_pubsub/epoch_subscriber.py
 resource/py_pubsub
 test/test_copyright.py
 test/test_flake8.py

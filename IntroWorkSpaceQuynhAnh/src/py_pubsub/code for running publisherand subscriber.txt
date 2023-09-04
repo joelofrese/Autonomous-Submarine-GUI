@@ -1,8 +1,0 @@
-source /opt/ros/foxy/setup.bash #used for sourcing the ros environment 
-colcon build --packages-select py_pubsub (in root workspace IntroWorkSpaceQuynhAnh)
-(in the same workspace) . install/setup.bash
-then write (have two terminals open for publisher and subscriber)
-ros2 run py_pubsub unix_epoch_time_publisher
-ros2 run py_pubsub unix_epoch_time_subscriber
-
-

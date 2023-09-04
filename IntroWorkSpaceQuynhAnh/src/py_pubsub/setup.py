@@ -20,8 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        	'unix_epoch_time_publisher = py_pubsub.danmei_is_life:main',
-        	'unix_epoch_time_subscriber = py_pubsub.danmei_is_passion:main',
+        	'unix_time_pub = py_pubsub.epoch_publisher:main',
+        	'unix_time_sub = py_pubsub.epoch_subscriber:main',
         ],
     },
 )
