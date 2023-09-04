@@ -2,7 +2,9 @@
 
 ## 1. Open terminal and run these commands:
    - Source the ROS environment:
-     ```source /opt/ros/foxy/setup.bash```
+     ```
+     source /opt/ros/foxy/setup.bash
+     ```
    - In the workspace that contains **gui_node** package, run:
      - Build **gui_node** package:
        ```colcon build --packages-select gui_node```
