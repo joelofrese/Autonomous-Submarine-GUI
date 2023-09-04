@@ -52,17 +52,14 @@ Iterate_outer_loop:
 addiu $t0 $t0, 1 # increment x
 j for_loop #jump back to loop
 ```
+Images before/after thresholding:
 <div align="center">
   <img src="https://github.com/ayuyamo/Projects/blob/068a73847087c556dbca571a0b74bfda5fd3f3ea/MIPS/images/lenna.png" width="48%">
   <img src="https://github.com/ayuyamo/Projects/blob/61a3e80eb8b9da2db11573c8ef3ccbe7689bdc71/MIPS/images/lenna-thresh.png" width="48%">
 </div>
 
 ## 2. Image Pixel Transformation: Rotation, Shearing, and Scaling
-<div align="center">
-  <img src="https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/lenna-rotation.png" width="30%">
-  <img src="https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/lenna-shear.png" width="30%">
-  <img src="https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/lenna-scale.png" width="30%">
-</div>
+
 This section contains MIPS assembly code responsible for transforming the original image pixels through rotation, shearing, and scaling. The code accepts the following parameters:
 
 - `a0`: Input buffer address
@@ -140,6 +137,12 @@ addiu $t0, $t0, 1 # increment outer loop counter (x++)
 j Outer_loop # iterate outer loop
 Done:
 ```
+Images after transformation: 
+<div align="center">
+  <img src="https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/lenna-rotation.png" width="30%">
+  <img src="https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/lenna-shear.png" width="30%">
+  <img src="https://github.com/ayuyamo/Projects/blob/5321f52cc9af2f61f05c65e0ee9c2e897a55c61e/MIPS/images/lenna-scale.png" width="30%">
+</div>
 
 ## 3. Image Pixel Encryption with Caesar Cipher
 This section contains MIPS assembly code responsible for encrypting image pixels using the Caesar Cipher cryptography technique. The code accepts the following parameters:
