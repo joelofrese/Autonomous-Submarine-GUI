@@ -2,6 +2,7 @@
 
 ### 1. Monochrome to Binary Pixel Mapping
 - Mapping pixels from a monochromatic image to another image that contains only pixel values of 0 (white) or 255 (black) using a buffer
+![original image](MIPS/images/lenna.png)
 
 ### 2. Image Pixel Transformation: Rotation, Shearing, and Scaling
 - Transforming original image pixels through rotation, shearing, and scaling
