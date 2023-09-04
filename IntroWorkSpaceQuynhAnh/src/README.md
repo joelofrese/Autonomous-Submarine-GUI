@@ -3,7 +3,7 @@
  Hi I'm writing code using ROS2 Foxy to establish publisher/sucsbriber nodes that updates and converts unix epoch time to human readable time every 5 seconds
 # Setup
 ## Required OS
-Ubuntu ver 20.04 is needed for this project, either you dual boot or create a virual machine. If latter, download the Ubuntu Desktop ISO file [here](https://releases.ubuntu.com/20.04.5/). Go to this [link](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview) for more tutorials on how to get started with Ubuntu virtual machine
+`Ubuntu LTS 20.04` is needed for this project, either you dual boot or create a virual machine. If latter, download the Ubuntu Desktop ISO file [here](https://releases.ubuntu.com/20.04.5/). Go to this [link](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview) for more tutorials on how to get started with Ubuntu virtual machine
 ## Installing ROS2 Foxy
 Go through instructions on [docs.ros.org](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html) to install & set up ROS2 (foxy)
 # Project
@@ -93,8 +93,8 @@ When the colon building proccess is done, in one terminal, type
 In the other one, copy this line
 ```ros2 run py_pubsub unix_epoch_time_subscriber```
 
-**In this case, 'py_pubsub' is the package name, and 'unix_epoch_time_publisher/subscriber' are the file names
+**In this case, 'py_pubsub' is the package name, and 'epoch_publisher/subscriber' are the file names
 
-You're all done. 
+You're all done!!!
 
 
