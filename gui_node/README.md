@@ -33,4 +33,5 @@
  - On the right are text boxes that display the pid values being sent through ros
     - Use `Clear` or `Clear All` buttons to empty the text boxes
  - Click on `ros topic list` button to see active ros topics
+   
    ![gui_pid_controller.png](https://github.com/ayuyamo/Projects/blob/71d43e601fdd928d1c1d273c384c35838d894f85/gui_node/images/gui_pid_controller.png)
