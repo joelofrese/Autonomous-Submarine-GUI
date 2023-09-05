@@ -24,6 +24,7 @@
   -  Launch nodes:
     - These are nodes to be added in a Python launch file that will run every sensor in the robot (for more details, please visit the [SDSU Mechatronics 2024](https://github.com/Mechatronics-SDSU/Mechatronics-2024) repository)
   -  Once finished, click `Start`
+    ![gui-homepage.png](https://github.com/ayuyamo/Projects/blob/1c71f55e6f794a033910675e2ce55bc342daada3/gui_node/images/gui-homepage.png)
 * Navigate to different pages using buttons on the side bar
 ## 3. PID Controller
  - Tune PID values in the line edits (hit `Enter` or `Return` keys to send the values)
@@ -32,3 +33,4 @@
  - On the right are text boxes that display the pid values being sent through ros
     - Use `Clear` or `Clear All` buttons to empty the text boxes
  - Click on `ros topic list` button to see active ros topics
+   ![gui-pid-controller.png](https://github.com/ayuyamo/Projects/blob/1c71f55e6f794a033910675e2ce55bc342daada3/gui_node/images/gui-pid-controller.png)
