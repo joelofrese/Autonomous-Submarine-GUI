@@ -88,14 +88,15 @@ Then type ```colcon build --packages-select <package_name>``` (in root workspace
 Open two new terminals, go into your works space through this command ```cd <your_workspace>``` then type this code in both terminals: ```install/setup.bash```
 
 When the colon building proccess is done, in one terminal, type
-```ros2 run py_pubsub unix_epoch_time_publisher```
+```ros2 run py_pubsub unix_time_pub```
 
 In the other one, copy this line
-```ros2 run py_pubsub unix_epoch_time_subscriber```
+```ros2 run py_pubsub unix_time_sub```
 
 **In this case, `py_pubsub` is the package name, and `epoch_publisher/subscriber` are the file names
 
 You're all done!!!
+
 
 ![unix_epoch_time.png](https://github.com/ayuyamo/Projects/blob/5ed6285b07af65ff102fe0de0909692fc0b6f0fe/IntroWorkSpaceQuynhAnh/unix_epoch_time.png)
 
