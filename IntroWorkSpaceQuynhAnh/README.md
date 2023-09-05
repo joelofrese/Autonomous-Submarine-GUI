@@ -93,7 +93,7 @@ When the colon building proccess is done, in one terminal, type
 In the other one, copy this line
 ```ros2 run py_pubsub unix_epoch_time_subscriber```
 
-**In this case, 'py_pubsub' is the package name, and 'epoch_publisher/subscriber' are the file names
+**In this case, `py_pubsub` is the package name, and `epoch_publisher/subscriber` are the file names
 
 You're all done!!!
 
