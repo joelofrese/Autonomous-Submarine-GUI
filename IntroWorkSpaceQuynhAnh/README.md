@@ -7,7 +7,7 @@
 ## Installing ROS2 Foxy
 Go through instructions on [docs.ros.org](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html) to install & set up ROS2 (foxy)
 # Project
-Here's some basic [tutorials](https://docs.ros.org/en/foxy/Tutorials.html) for the project (Strongly recommend sections [Beginner: CLI Tools](https://docs.ros.org/en/foxy/Tutorials/Beginner-CLI-Tools.html) and [Beginner: Client Libraries](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries.html)
+Here's some basic [tutorials](https://docs.ros.org/en/foxy/Tutorials.html) for the project (Sections [Beginner: CLI Tools](https://docs.ros.org/en/foxy/Tutorials/Beginner-CLI-Tools.html) and [Beginner: Client Libraries](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries.html) would be good enough for this project)
 
 This project is written in python. Refer to the following [link](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html) for instructions to write in C++.
 
