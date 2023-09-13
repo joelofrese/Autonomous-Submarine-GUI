@@ -1,4 +1,0 @@
-[console_scripts]
-unix_time_pub = py_pubsub.epoch_publisher:main
-unix_time_sub = py_pubsub.epoch_subscriber:main
-

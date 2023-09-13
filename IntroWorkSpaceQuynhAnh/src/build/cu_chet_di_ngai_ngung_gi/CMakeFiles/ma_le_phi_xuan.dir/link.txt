@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/ma_le_phi_xuan.dir/src/ma_le_phi_xuan.cpp.o  -o ma_le_phi_xuan 

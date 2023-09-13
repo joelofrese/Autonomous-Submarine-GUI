@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/cho_de.dir/src/cho_de.cpp.o  -o cho_de 

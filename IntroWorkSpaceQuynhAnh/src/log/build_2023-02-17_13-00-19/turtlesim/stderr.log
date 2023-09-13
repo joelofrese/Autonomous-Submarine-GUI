@@ -1,5 +1,0 @@
-make[2]: *** [CMakeFiles/turtlesim_node.dir/build.make:67: CMakeFiles/turtlesim_node.dir/src/turtlesim.cpp.o] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:367: CMakeFiles/turtlesim_node.dir/all] Interrupt
-make[2]: *** [CMakeFiles/turtle_teleop_key.dir/build.make:63: CMakeFiles/turtle_teleop_key.dir/tutorials/teleop_turtle_key.cpp.o] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:339: CMakeFiles/turtle_teleop_key.dir/all] Interrupt
-make: *** [Makefile:141: all] Interrupt
